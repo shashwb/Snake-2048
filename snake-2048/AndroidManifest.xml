@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.frenchtoastmafia.snake2048"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.frenchtoastmafia.snake2048.MainActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name="com.frenchtoastmafia.snake2048.TitleMenu" >
+        </activity>
+        <activity android:name="com.frenchtoastmafia.snake2048.LoginMenu" >
+        </activity>
+        <activity android:name="com.frenchtoastmafia.snake2048.SignUpMenu" >
+        </activity>
+        <activity
+            android:name="com.frenchtoastmafia.snake2048.GameSelect"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.frenchtoastmafia.snake2048.PauseScreen" >
+        </activity>
+    </application>
+
+</manifest>
